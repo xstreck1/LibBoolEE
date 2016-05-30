@@ -1,9 +1,7 @@
 TEMPLATE = app
 
 HEADERS += \
-    LibBoolEE.h \
-    LibBoolEE.hpp\
-    shared_export_def.h
+    LibBoolEE.h
 
 SOURCES += \ 
     LibBoolEE.cpp \

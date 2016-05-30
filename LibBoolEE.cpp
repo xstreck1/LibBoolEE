@@ -1,5 +1,4 @@
 #include <stdexcept>
-#include "LibBoolEE.hpp"
 #include "LibBoolEE.h"
 
 std::vector<std::string> LibBoolEE::singleParse(const std::string & formula, const char op) {
@@ -122,13 +121,5 @@ std::string LibBoolEE::removeWhitespaces(const std::string &source) {
         }
     }
     return result;
-}
-
-bool LibBoolEEResolve(const char * source, const LibBoolEEVal * const vals, const int len) {
-    LibBoolEE::Vals new_vals;
-    for (int i = 0; i < len; i++) {
-        new_vals.insert(std::make_pair(vals[i].name,vals[i].value));
-    }
-    return LibBoolEE::resolve(source, new_vals);
 }
 

@@ -1,14 +1,8 @@
-#include "LibBoolEE.hpp"
 #include "LibBoolEE.h"
 
 #define CPP_TEST(expr, vals) \
     if(!LibBoolEE::resolve(expr,vals)){ \
         throw std::runtime_error(std::string(expr) + " does not yield the expected value in Cpp test.\n"); \
-    };
-
-#define C_TEST(expr, vals, len) \
-    if(!LibBoolEEResolve(expr,vals, len)){ \
-        throw std::runtime_error(std::string(expr) + " does not yield the expected value in C test.\n"); \
     };
 
 int main() {
@@ -24,9 +18,5 @@ int main() {
     CPP_TEST(("!(\n(A&B ) \t | (B&A)|!(A|B))"), vals); // Whitespace
     CPP_TEST("A|B&B", vals); // operator precedence
     CPP_TEST("!((A|B)&B)", vals); // operator precedence - cont'd
-    CPP_TEST("!(!B&!A|A&B)", vals); // the negation error
-
-    // Test the C interface
-    const LibBoolEEVal c_vals[] = { LibBoolEEVal {"A", true}, LibBoolEEVal {"B", false} };
-    C_TEST("A|B", c_vals, 2);
+    CPP_TEST("!(!B&!A|A&B)", vals); // negation binding
 }
