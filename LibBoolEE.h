@@ -1,16 +1,21 @@
 #ifndef LIBBOOLEE_H
 #define LIBBOOLEE_H
 
-#ifdef _WIN32
-#ifdef BUILD_SHARED_IMPORT
-#define SHARED_EXPORT __declspec(dllexport)
-#elif BUILD_SHARED_EXPORT
-#define SHARED_EXPORT __declspec(dllimport)
-#else
-#endif
-#else
-#define SHARED_EXPORT
-#endif
+/******************************************************************************
+Created by Adam Streck, 2016, adam.streck@gmail.com
+
+This file is part of the LibBoolEE library.
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU lesser General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License along with
+this program.  If not, see <http://www.gnu.org/licenses/>.
+******************************************************************************/
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// @brief Class able to resolve any logical function in propositional logic.
@@ -18,10 +23,11 @@
 /// This is a static helper class able of resolving any preposition logic formula.
 /// Formula construction:
 ///   -# \f$tt\f$ (true) and \f$ff\f$ (false) are formulas representing true and false respectively,
-///	-# any variable is a formula,
+///	  -# any variable is a formula,
 ///   -# for \f$\varphi\f$ formula is \f$!\varphi\f$ formula,
 ///   -# for \f$\psi, \varphi\f$ formulas are \f$(\psi|\varphi)\f$, \f$(\psi\&\varphi)\f$ formulas representing logical disjunction and conjunction respectively,
-///   -# nothing else is a formula.
+///   -# nothing else is a formula,
+///   -# whitespaces are ignored.
 ///
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
