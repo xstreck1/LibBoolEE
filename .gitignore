@@ -16,3 +16,7 @@ cmake_install.cmake
 *.dir
 *VC.db
 *VC.opendb
+
+*pro
+
+Makefile*
