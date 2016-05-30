@@ -1,6 +1,6 @@
 TEMPLATE = lib
 
-CONFIG += c++11
+CONFIG += c++98
 
 DEFINES += BUILD_SHARED
 
