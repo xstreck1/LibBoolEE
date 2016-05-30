@@ -1,10 +1,9 @@
 TEMPLATE = app
 
-CONFIG += c++11
-
 HEADERS += \
     LibBoolEE.h \
-    LibBoolEE.hpp
+    LibBoolEE.hpp\
+    shared_export_def.h
 
 SOURCES += \ 
     LibBoolEE.cpp \

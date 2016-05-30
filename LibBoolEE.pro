@@ -1,9 +1,5 @@
 TEMPLATE = lib
 
-CONFIG += c++98
-
-DEFINES += BUILD_SHARED
-
 HEADERS += \
     LibBoolEE.h \
     LibBoolEE.hpp \

@@ -18,9 +18,8 @@
 #include <vector>
 #include <utility>
 
-#include "shared_export_def.h"
 
-class SHARED_EXPORT LibBoolEE {
+class LibBoolEE {
 public:
     typedef std::map<std::string, bool> Vals; ///< Valuation of atomic propositions
     typedef std::pair<std::string, bool> Val; ///< A single proposition valuation
