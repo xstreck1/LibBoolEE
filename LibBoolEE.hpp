@@ -17,7 +17,7 @@
 #include <string>
 #include <vector>
 #include <utility>
-
+#include <stdexcept>
 
 class LibBoolEE {
 public:

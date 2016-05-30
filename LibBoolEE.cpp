@@ -1,4 +1,4 @@
-#include <exception>
+#include <stdexcept>
 #include "LibBoolEE.hpp"
 #include "LibBoolEE.h"
 
