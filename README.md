@@ -1,7 +1,7 @@
 Library for Evaluation of Boolean Expressions
 =============================================
 
-This is a tiny, C++, multiplatform, and dependency-less library that evaluates boolean expressions in a text form.
+This is a tiny, C++, dependency-less library that evaluates boolean expressions in a text form.
 
 Example:
 --------
