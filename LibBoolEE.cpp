@@ -14,8 +14,6 @@ You should have received a copy of the GNU General Public License along with
 this program.  If not, see <http://www.gnu.org/licenses/>.
 ******************************************************************************/
 
-
-#include <stdexcept>
 #include "LibBoolEE.h"
 
 std::vector<std::string> LibBoolEE::singleParse(const std::string & formula, const char op) {
