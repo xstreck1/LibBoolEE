@@ -19,7 +19,7 @@ It is sufficient to add `LibBoolEE.cpp` and `LibBoolEE.h` to your project.
 Formula syntax:
 ---------------
 * `tt` (true) and `ff` (false) are formulas representing true and false respectively,
-* any variable is a formula,
+* any variable of the form `[A-Za-Z0-9]+` is a formula,
 * for `φ` formula is `!φ`   formula,
 * for `φ`, `ψ` formulas are `(φ|ψ)`, `(φ&ψ)` formulas representing logical disjunction and conjunction respectively,
 * nothing else is a formula.
